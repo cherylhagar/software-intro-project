@@ -13,6 +13,4 @@ public:
 	Node(void);	//default constructor
 
 private:
-	
-	
 };
