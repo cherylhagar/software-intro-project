@@ -112,8 +112,8 @@ void linked_list::Display()	//create a function to go through and print each nod
 	int i = 1;			// create a counter variable to increment
 	cout << " ";
 	while (head) {		//while head has something print it, increment it and repeat until there are no more nodes
-		cout << head->data << "  ";
-		head = head->next;
+		//your code goes here
+		// think about how other functions "walk" along the nodes. What is inside a node we are trying to print?
 		i++;
 	}
 	cout << "\n";
