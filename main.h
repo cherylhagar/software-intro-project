@@ -9,7 +9,7 @@
 
 using namespace std;
 /**
- * @breif 	Creates a space in memory for the program to run in 
+ * @breif 	Creates a space in memory for the program to run in
  */
 int menu();
 void clearScreen();

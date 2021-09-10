@@ -16,9 +16,9 @@ int main() {
 			cin >> value;
 			for (int i = 0; i < value; i++) {	//for loop for repetitious insertion
 				cout << " Please enter a number to add to linked list.\n";
-					cin >> numberToAdd;
-					a.insert(numberToAdd);
-				}
+				cin >> numberToAdd;
+				a.insert(numberToAdd);
+			}
 			cout << "Please press enter to return back to main menu.";
 			pauseScreen();
 			break;
@@ -88,7 +88,7 @@ int main() {
 }
 int menu()	//menu function used in conjunction with switch case
 {
-	int inputMenu;			
+	int inputMenu;
 	printf("Please Press an option to perform that action. \n");
 	printf("1. Insert\n");
 	printf("2. Delete\n");

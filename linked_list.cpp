@@ -27,7 +27,7 @@ void linked_list::insert(int x)		//here is my insert function, it automatically 
 		tail = temp;
 	}
 	else {				//condition for if there are elements in the linked list
-		tail->next = temp;	
+		tail->next = temp;
 		tail = tail->next;
 	}
 	this->length++;		//everytime I insert a node increment that specific linked list's length variable
@@ -55,7 +55,7 @@ void linked_list::InsertAtEnd(int x)	//lab specifies we need this, yet the menu 
 {
 	Node* temp = new Node;
 	temp->data = x;
-	temp->next = NULL;	
+	temp->next = NULL;
 	if (head == NULL) {
 		head = temp;
 		tail = temp;
@@ -111,9 +111,8 @@ void linked_list::Display()	//create a function to go through and print each nod
 	Node* head = this->head;	//set head node equal to linked list's head value. Start from beginning.
 	int i = 1;			// create a counter variable to increment
 	cout << " ";
-	while (head) {		//while head has something print it, increment it and repeat until there are no more nodes
-		//your code goes here
-		// think about how other functions "walk" along the nodes. What is inside a node we are trying to print?
+	while (head) {		//while head has something print it, adjust pointers, increment it and repeat until there are no more nodes
+		//your code here
 		i++;
 	}
 	cout << "\n";
@@ -124,7 +123,7 @@ void linked_list::Display()	//create a function to go through and print each nod
  * @return     value of all items in the list
  */
 int linked_list::Sum()	//sums all values in list
-{	
+{
 	int sum = 0;	//create an int to return
 	if (this->Empty() == true) {		//check if list has values
 		cout << "Sum: There are no members inside the list.\n";
