@@ -8,8 +8,9 @@
 class Node
 {
 public:
-	int data = 0;	//initialized to zero	
-	Node* next = NULL; // initialized to NULL whenever an instace is generated.
+	int data;		/* data element */
+	Node* next;		/* pointer to next node */
+
 	Node(void);	//default constructor
 
 private:
