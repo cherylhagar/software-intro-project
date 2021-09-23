@@ -44,8 +44,8 @@ There should be a yellow part on the screen that say ~/source/repos that shows t
 
 Go to the repo's homepage and on the top right there is a blue button that says clone, click it and copy the https url address option.
 
-step 3: clone the repo
-run 
+step 3: to clone the repo run:
+
 $git clone https://git.sdsurocketproject.org/avionics/intro-projects/software_intro_project_linked_lists.git
 
 It may prompt for login credentials, enter those and it should start pulling the code. It will place a folder in repos that is the name of the cloned repo.
@@ -115,6 +115,7 @@ Note: there are many ways to do this far better than above, but for starting out
 now: 
 
 $git pull
+
 $git push
 
 this will write all of your changes to the remote branch that is now available to everyone to work on and run locally if they wish.
