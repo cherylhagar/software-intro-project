@@ -23,7 +23,7 @@ NOTE:
 So when you open it you will be dropped into a shell in your home directory. For me is says my user@machine MINGW64 ~
 
 NOTE:
-dollar sign just means run it in your shell 
+dollar sign just means run it in your shell, this means you do not include the dollar sign on your copy and paste 
 
 NOTE:
 If we go ahead and run the list command "ls" it will print out the contents of the directory, in windows I believe this is where our user folder is. If you have a place where you normally have code you can go to it by using "cd" or "change directory", to see where you are at in the filesystem you can also send "pwd" which is path working directory. If none of that made sense, dont fret it. 
@@ -49,6 +49,8 @@ step 3: to clone the repo run:
 $git clone https://git.sdsurocketproject.org/avionics/intro-projects/software_intro_project_linked_lists.git
 
 It may prompt for login credentials, enter those and it should start pulling the code. It will place a folder in repos that is the name of the cloned repo.
+
+For future reference try and use ssh keys, it's a lot more common and safer in industry. Also doesn't ever make you login since verifcation is done through key exchange.
 
 step 4: make a branch with your name on it to edit changes on
 when you default clone master will be copied by default. Master is holy, it is the purest and best, only peer reviewed changes make it to master as it is supposed to be clean, meaning no errors. The master for this branch is considered clean, it will compile with zero changes. The code has purposefully removed things, but it will compile.
