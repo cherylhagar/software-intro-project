@@ -29,15 +29,21 @@ NOTE:
 If we go ahead and run the list command "ls" it will print out the contents of the directory, in windows I believe this is where our user folder is. If you have a place where you normally have code you can go to it by using "cd" or "change directory", to see where you are at in the filesystem you can also send "pwd" which is path working directory. If none of that made sense, dont fret it. 
 
 step 2: using git bash create a repo's folder by typing in:
+
 $mkdir source
 >mkdir source
+
 then press enter, you just created a folder for source code. next type:
+
 $cd source 
 >cd source
+
 then again type: 
 $mkdir repos
 >mkdir repos
+
 and 
+
 $cd repos
 >cd repos
 
