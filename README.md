@@ -1,4 +1,4 @@
-# software_intro_project_linked_lists
+# Print The Node of a linked list
 
 The goal of this project is to get everyone set up so they may run some C++ code and implement a simple print statement. The required software is git bash for handling the necessary git commands and for now Visual Studio 2017/19. Normally in a professional enviornment there would be a makefile that would have instructions for the gcc compiler to build everything in a project like this, but for now we are going to lean on the GUI from Visual Studio. This project is less of a test of whether or not you can code, but to try and give the best representation of software development in a collaborative enviornment. (with the exception of a pull request, since everyone is doing the same code) The pull request and related material will be covered in an avionics meeting as it is really important and should be explained in person. This project also assumes a windows host pc as that seems to be the larger OS for most people. (Personally I am a linux guy)
 
@@ -30,12 +30,16 @@ If we go ahead and run the list command "ls" it will print out the contents of t
 
 step 2: using git bash create a repo's folder by typing in:
 $mkdir source
+>mkdir source
 then press enter, you just created a folder for source code. next type:
 $cd source 
+>cd source
 then again type: 
 $mkdir repos
+>mkdir repos
 and 
 $cd repos
+>cd repos
 
 
 step 3: clone the repository from git.sdsurocketproject.org
@@ -47,23 +51,27 @@ Go to the repo's homepage and on the top right there is a blue button that says 
 step 3: to clone the repo run:
 
 $git clone https://git.sdsurocketproject.org/avionics/intro-projects/software_intro_project_linked_lists.git
+>git clone https://git.sdsurocketproject.org/avionics/intro-projects/software_intro_project_linked_lists.git
 
 It may prompt for login credentials, enter those and it should start pulling the code. It will place a folder in repos that is the name of the cloned repo.
 
 For future reference try and use ssh keys, it's a lot more common and safer in industry. Also doesn't ever make you login since verifcation is done through key exchange.
 
 step 4: make a branch with your name on it to edit changes on
-when you default clone master will be copied by default. Master is holy, it is the purest and best, only peer reviewed changes make it to master as it is supposed to be clean, meaning no errors. The master for this branch is considered clean, it will compile with zero changes. The code has purposefully removed things, but it will compile.
+when you default clone master will be copied by default. Master (or main) is holy, it is the purest and best, only peer reviewed changes make it to master as it is supposed to be clean, meaning no errors. The master for this branch is considered clean, it will compile with zero changes. The code has purposefully removed things, but it will compile.
 
 follow the comment here with ~937 up votes:
 https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch
 
-or 
+
+**Please name the branch uniquely do no just past branch name**
 $git checkout -b chris-branch
+>git checkout -b chris-branch
 
 also run:
 
 $git push --set-upstream origin chris-branch
+>git push --set-upstream origin chris-branch
 
 it will let you know you have switched branches, now you can do your work and it will NOT be captured on master until ready for review through a PR.  Once you are done with your changes, you are going to take your personal changes and push them to the repo. 
 
@@ -83,11 +91,13 @@ step 6: push code to your branch
 Once you are done coding go ahead and run:
 
 $git pull 
+>git pull
 
 this will synchronize your personal machine with remote. this is necessary before pushs as it prevents merge conflicts from rearing themselves on remote which are a pain and sometimes impossible if you are dealing with binaries or hex files since it's no longer human readable.
 
 Once that is done we need to see how things look on your machine run:
 $git status
+>git status
 
 
 if you have untracked changes they wil be red, if they are tracked they will be green. Ideally, since you are only supposed to change linked_list.cpp that should really only be the change that you need to commit. 
@@ -98,32 +108,39 @@ modified:file_name
 
 go ahead and run 
 $git add linked_list.cpp 
+>git push --set-upstream origin chris-branch
 
 NOTE: tab complete means you dont need to list out the entire file
 
-or to add every change you made in the repo run:
+or to add every change you made in the repo run, note the period is important, not a typo:
 $git add .
+>git add .
 
 run git status again and it will be green since the changes are accounted for:
 
 $git status
+>git status
 
 next create a commit that describes your changes 
 
 $git commit -m "I added a missing part of void linked_list::Display()..." 
+>git commit -m "I added a missing part of void linked_list::Display()..." 
 
 Note: there are many ways to do this far better than above, but for starting out this will work. Normally vim or sublime would open and you ideally give a succinct explanation of your changes.
 
 now: 
 
 $git pull
+>git pull
 
 $git push
+>git push
 
 this will write all of your changes to the remote branch that is now available to everyone to work on and run locally if they wish.
 
 hint:while on your branch run:
 $git diff master 
+>git diff master
 
 "q" to quit
 to view how your branch differs from master, this is extremely helpful before submitting your code for peer review. Don't look like an idiot, proofread your changes. The reviewer will first go directly to the diff to evaluate your work.
