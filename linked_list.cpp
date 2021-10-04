@@ -113,6 +113,7 @@ void linked_list::Display()	//create a function to go through and print each nod
 	cout << " ";
 	while (head) {		//while head has something print it, adjust pointers, increment it and repeat until there are no more nodes
 		//your code here
+		print(head);
 		//think how we can walk down the list with pointers and node's
 		i++;
 	}
