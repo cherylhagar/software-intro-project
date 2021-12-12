@@ -28,7 +28,7 @@ clean:
 	-$(RM) "linked_list" node.o linked_list.o main.o
 
 pre-build:
-	-@echo 'haxoring the mainframe'
+	-@echo 'Building the Project...'
 	-@echo ' '
 
 post-build:
